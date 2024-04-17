@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html class="html" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Евгений Борисов (https://t.me/losbojos)">
+  <title>СибирьТрансАзия Тестовое</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&display=swap">
+</head>
+<body class="body">
+<div class="wrapper">
+  <header class="header">
+    <div class="header__content">
+      <p class="header__logo">LOGO</p>
+      <p class="header__info">Запчасти и спецтехника для горнодобывающей отрасли</p>
+      <div class="header__contacts">
+        <p class="header__contact">frontend.test@mail.ru</p>
+        <p class="header__contact">+7 499 999-99-99</p>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="main__section main__section_info">
+      <div class="main__content">
+        <div class="about">
+          <div class="about__wrapper">
+            <h1 class="about__title">Официальные диллеры Komatsu, 
+              Epiroc и Manitou в России</h1>
+            <ul class="about__benefits">
+              <li class="about__benefit">Подбор техники под ваши задачи</li>
+              <li class="about__benefit">Выкуп и доставка оборудования</li>
+              <li class="about__benefit">Техническое обслуживание 24/7</li>
+            </ul>
+          </div>
+          <p class="about__promt">Оставьте заявку по почте frontend.test@mail.ru.<br>Наши менеджеры свяжутся с вами в течение 15 минут.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="main__section main__section_catalog">
+      <div class="main__content">
+        <div class="catalog">
+          <h2 class="catalog__title">Каталог техники</h2>
+          <div class="catalog__cards">
+            <div class="catalog__card">
+              <img class="catalog__card-img" src="<%=require('./images/equipment_catalog/komatsu.png')%>" alt="Komatsu">
+              <h3 class="catalog__card-title">Komatsu</h3>
+            </div>
+            <div class="catalog__card">
+              <img class="catalog__card-img" src="<%=require('./images/equipment_catalog/epiroc.png')%>" alt="Epiroc">
+              <h3 class="catalog__card-title">Epiroc</h3>
+            </div>
+            <div class="catalog__card">
+              <img class="catalog__card-img" src="<%=require('./images/equipment_catalog/manitou.png')%>" alt="Manitou">
+              <h3 class="catalog__card-title">Manitou</h3>
+            </div>
+            <div class="catalog__card">
+              <img class="catalog__card-img" src="<%=require('./images/equipment_catalog/hensley.png')%>" alt="Hensley">
+              <h3 class="catalog__card-title">Hensley</h3>
+            </div>
+            <div class="catalog__card">
+              <img class="catalog__card-img" src="<%=require('./images/equipment_catalog/kvx.png')%>" alt="KVX">
+              <h3 class="catalog__card-title">KVX</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="catalog">
+          <h2 class="catalog__title">Каталог запчастей</h2>
+          <div class="catalog__cards">
+            <div class="catalog__card">
+              <img class="catalog__card-img" src="<%=require('./images/equipment_catalog/komatsu.png')%>" alt="Komatsu">
+              <h3 class="catalog__card-title">Komatsu</h3>
+            </div>
+            <div class="catalog__card">
+              <img class="catalog__card-img" src="<%=require('./images/equipment_catalog/epiroc.png')%>" alt="Epiroc">
+              <h3 class="catalog__card-title">Epiroc</h3>
+            </div>
+            <div class="catalog__card">
+              <img class="catalog__card-img" src="<%=require('./images/equipment_catalog/manitou.png')%>" alt="Manitou">
+              <h3 class="catalog__card-title">Manitou</h3>
+            </div>
+            <div class="catalog__card">
+              <img class="catalog__card-img" src="<%=require('./images/equipment_catalog/other.png')%>" alt="прочее">
+              <h3 class="catalog__card-title">Прочее</h3>
+            </div>
+          </div>
+        </div>        
+      </div>
+    </section>
+
+    <section class="main__section main__section_benefits">
+      <div class="main__content">
+        <div class="benefits">
+          <h2 class="benefits__title">Наши преимущества</h2>
+          <div class="benefits__cards">
+
+            <div class="benefits__card">
+              <img class="benefits__card-img" src="<%=require('./images/benefits/offices.png')%>" alt="icon">
+              <div class="benefits__card-info-container">
+                <h3 class="benefits__card-title">Офисы по всей стране</h3>
+                <p class="benefits__card-info">Мы  — официальный дистрибьютор крупнейших производителей горнодобывающей техники.</p>
+              </div>
+            </div>
+
+            <div class="benefits__card">
+              <img class="benefits__card-img" src="<%=require('./images/benefits/500years.png')%>" alt="icon">
+              <div class="benefits__card-info-container">
+                <h3 class="benefits__card-title">500 лет на рынке</h3>
+                <p class="benefits__card-info">Знаем этот рынок с этапа зарождения до проблематики сферы сегодняшнего дня. Предоставим обучение вашим специалистам бесплатно!</p>
+              </div>
+            </div>
+
+            <div class="benefits__card">
+              <img class="benefits__card-img" src="<%=require('./images/benefits/24-7.png')%>" alt="icon">
+              <div class="benefits__card-info-container">
+                <h3 class="benefits__card-title">Обслуживание 24/7</h3>
+                <p class="benefits__card-info">Укомплектованный штат в 90 человек позволяет реагировать на ваши запросы в любое время суток.</p>
+              </div>
+            </div>
+
+            <div class="benefits__card">
+              <img class="benefits__card-img" src="<%=require('./images/benefits/outsourcing.png')%>" alt="icon">
+              <div class="benefits__card-info-container">
+                <h3 class="benefits__card-title">Аутсорс по ВЭД</h3>
+                <p class="benefits__card-info">Поможем с доставкой, таможенным оформлением и прохождением таможни.</p>
+              </div>
+            </div>
+
+            <div class="benefits__card">
+              <img class="benefits__card-img" src="<%=require('./images/benefits/your_city.png')%>" alt="icon">
+              <div class="benefits__card-info-container">
+                <h3 class="benefits__card-title">Офис в вашем городе</h3>
+                <p class="benefits__card-info">8 представительств в крупных регионах России. Предоставим персональную консультацию с выездом 
+                  на предприятие в любом городе страны.</p>
+              </div>
+            </div>
+
+
+            <div class="benefits__card">
+              <img class="benefits__card-img" src="<%=require('./images/benefits/mining.png')%>" alt="icon">
+              <div class="benefits__card-info-container">
+                <h3 class="benefits__card-title">Подрядные горные работы</h3>
+                <p class="benefits__card-info">Полный цикл работ по добыче, транспортировке сырья и обработке сыпучих материалов.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="main__section main__section_news">
+      <div class="main__content">
+        <div class="news">
+          <h2 class="news__title">Новости</h2>
+          <div class="news__cards">
+
+            <div class="news__card">
+              <img class="news__card-img" src="<%=require('./images/news/news_01.png')%>" alt="icon">
+              <div class="news__card-info-container">
+                <p class="news__card-date">05 сентября 2019</p>
+                <p class="news__card-info">Поздравляем всех коллег 
+                  с днем шахтера! Спасибо, за ваш тяжелый и опасный труд! Мы ценим вас и приглашаем в нашу команду! Звоните в кадровый отдел: 
+                  8 (999) 999 09-09 (Ирина).</p>
+              </div>
+            </div>
+
+            <div class="news__card">
+              <img class="news__card-img" src="<%=require('./images/news/news_02.png')%>" alt="icon">
+              <div class="news__card-info-container">
+                <p class="news__card-date">26 августа 2022</p>
+                <p class="news__card-info">Поздравляем всех коллег 
+                  с днем шахтера! Спасибо, за ваш тяжелый и опасный труд! Мы ценим вас и приглашаем в нашу команду! Звоните в кадровый отдел: 
+                  8 (999) 999 09-09 (Ирина).</p>
+              </div>
+            </div>
+
+            <div class="news__card">
+              <img class="news__card-img" src="<%=require('./images/news/news_03.png')%>" alt="icon">
+              <div class="news__card-info-container">
+                <p class="news__card-date">05 сентября 2019</p>
+                <p class="news__card-info">Поздравляем всех коллег 
+                  с днем шахтера! Спасибо, за ваш тяжелый и опасный труд! Мы ценим вас и приглашаем в нашу команду! Звоните в кадровый отдел: 
+                  8 (999) 999 09-09 (Ирина).</p>
+              </div>
+            </div>
+
+            <div class="news__card">
+              <img class="news__card-img" src="<%=require('./images/news/news_04.png')%>" alt="icon">
+              <div class="news__card-info-container">
+                <p class="news__card-date">26 августа 2022</p>
+                <p class="news__card-info">Поздравляем всех коллег 
+                  с днем шахтера! Спасибо, за ваш тяжелый и опасный труд! Мы ценим вас и приглашаем в нашу команду! Звоните в кадровый отдел: 
+                  8 (999) 999 09-09 (Ирина).</p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="main__section main__section_quotes">
+      <div class="main__content">
+        <div class="quotes">
+          <h2 class="quotes__title">Цитаты — лучший способ изучения мыслителей от Древнего мира до современности!</h2>
+          <div class="quotes__cards">
+
+            <div class="quotes__card">
+              <p class="quotes__card-text">Место под вашу цитату</p>
+              <p class="quotes__card-auther">© Автор цитаты</p>
+            </div>
+            
+          </div>
+
+          <div class="quotes__footer">
+            <p class="quotes__slogan">Жми на кнопку и развивайся!</p>
+            <button class="quotes__button" id="get_quote__button">Узнать цитату</button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__content">
+      <p class="footer__copyright">2024 © Все права защищены</p>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>
