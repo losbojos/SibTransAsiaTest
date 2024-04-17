@@ -1,4 +1,4 @@
-const FORISMATIC_SERVER_URL = 'http://api.forismatic.com/api/1.0/';
+//const FORISMATIC_SERVER_URL = 'https://api.forismatic.com/api/1.0/';
 
 class ForismaticApi {
     constructor() {
@@ -9,12 +9,12 @@ class ForismaticApi {
             method: "GET",
             redirect: "follow",
             // mode: "no-cors",
-            headers: {
-                "Content-Type": "application/json",
-            }
+            // headers: {
+            //     "Content-Type": "application/x-www-form-urlencoded", // Content-Type application/json
+            // }
         };
             
-        return fetch("http://api.forismatic.com/api/1.0/?method=getQuote&format=json&lang=ru", requestOptions)
+        return fetch("https://api.forismatic.com/api/1.0/?method=getQuote&format=json&lang=ru", requestOptions)
         .then((response) => { 
             console.log('response:', response);
             if (response.ok)
