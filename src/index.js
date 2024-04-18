@@ -8,6 +8,33 @@ function setMargin(event) {
   element.style.marginBottom = `${marginBottomValue}px`;
 }
 
+function addQuote(quote, author) {
+
+  const cards = document.getElementById('quotes__cards');
+
+  const newQuote = document.createElement('div');
+  newQuote.className = 'quotes__card';
+  const quoteText = document.createElement('p');
+  quoteText.className = 'quotes__card-text';
+  quoteText.textContent = quote;
+  newQuote.appendChild(quoteText);
+
+  if (author) {
+    const quoteAuthor = document.createElement('p');
+    quoteAuthor.className = 'quotes__card-auther';
+    quoteAuthor.textContent = '© ' + author;
+    newQuote.appendChild(quoteAuthor, );
+  }
+
+  let firstChild = cards.querySelector('.quotes__card');
+  if (firstChild.id === 'quote-template'){
+    firstChild.remove();
+  } 
+
+  cards.appendChild(newQuote);
+}
+
+
 document.addEventListener('DOMContentLoaded', function() {
   const elements = document.querySelectorAll('.catalog__card-img');
   
@@ -20,18 +47,25 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   let button = document.getElementById('get_quote__button');
-  button.addEventListener('click', function() {
-
+  button.addEventListener('click', function(event) {
 
     ForismaticApiInstance.getQuote()
     .then(result => {
-       console.log('result:', result);
+      if (result.length > 0)
+      {
+        let aQuote = result[0];
+        addQuote(aQuote.quote, aQuote.author);
+        event.target.scrollIntoView({ behavior: 'smooth' });  
+      }
+      else {
+        console.log('error:', 'something wrong, result.length <= 0');
+        console.log('result: ', result);
+      }
      })
      .catch(error => {
        console.log('error:', error);
-    });    
-
+    });
     
-  });  
+  });
 
 });

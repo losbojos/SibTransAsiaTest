@@ -1,4 +1,7 @@
-//const FORISMATIC_SERVER_URL = 'https://api.forismatic.com/api/1.0/';
+// const FORISMATIC_SERVER_URL = 'http://api.forismatic.com/api/1.0/?method=getQuote&format=json&lang=ru';
+
+const QUOTE_SERVICE = 'https://api.api-ninjas.com/v1/quotes';
+const QUOTE_SERVICE_API_KEY = 'ckJazF8nPSAFc+DEVh7fBA==8oVRbpEN4BDXoriz'; // 'X-Api-Key'
 
 class ForismaticApi {
     constructor() {
@@ -8,15 +11,14 @@ class ForismaticApi {
         const requestOptions = {
             method: "GET",
             redirect: "follow",
-            // mode: "no-cors",
-            // headers: {
-            //     "Content-Type": "application/x-www-form-urlencoded", // Content-Type application/json
-            // }
+            headers: {
+                'X-Api-Key': QUOTE_SERVICE_API_KEY
+            }
         };
             
-        return fetch("https://api.forismatic.com/api/1.0/?method=getQuote&format=json&lang=ru", requestOptions)
+        return fetch(QUOTE_SERVICE, requestOptions)
         .then((response) => { 
-            console.log('response:', response);
+            //console.log('response:', response);
             if (response.ok)
                 return response.json();
             else 
